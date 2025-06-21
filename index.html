@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <!-- CSS do Glide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css" />
+
+    <!-- JS do Glide -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div id="nav-container">
+
+            <!-- Botão hamburguer -->
+            <input type="checkbox" id="burger-toggle" hidden>
+            <label class="burger" for="burger-toggle">
+                <span class="hamburguercolor"></span>
+                <span class="hamburguercolor"></span>
+                <span class="hamburguercolor"></span>
+            </label>
+
+            <li id="temapaginainical" class="mododarkpaginainicial">
+                <input type="checkbox" id="modo2">
+                <img id="mododark2" src="img/lua.png" alt="Lua">
+            </li>
+
+
+            <!-- Menu -->
+            <ul id="menu">
+                <li id="tema" class="mododarkdentrodohamburguer">
+                    <input type="checkbox" id="modo">
+                    <img id="mododark" src="img/lua.png" alt="Lua">
+                </li>
+
+                <li><a class="li" href="#">Início</a></li>
+                <li><a class="li" href="#textohabilidade">Habilidades</a></li>
+                <li><a class="li" href="#projetos">Projetos</a></li>
+                <li><a class="li" href="#contato">Contato</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <script>
+        // Espera a página carregar
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerToggle = document.getElementById('burger-toggle');
+            const links = document.querySelectorAll('#menu a');
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Fecha o menu desmarcando o checkbox
+                    burgerToggle.checked = false;
+                });
+            });
+        });
+    </script>
+
+
+    <br>
+    <br>
+
+    <div class="main-container">
+        <div class="content">
+
+            <div class="info">
+                <h1 id="h1">Olá, sou
+                    <span>Gabriel Schiavon</span>
+                </h1>
+
+                <p id="texto">"Está procurando um
+                    Web Designer, programador e técnico de TI para fortalecer sua marca, expandir seu negócio e superar
+                    desafios técnicos? Vamos transformar sua visão em realidade!"
+                </p>
+
+                <div id="ajustarcurriculo">
+                    <a href="Currículo.pdf" download class="curriculo">📄 Baixar Currículo</a>
+                </div>
+
+
+                <div class="button-container">
+                    <a href="#habilidades" class="button">Veja minhas Habilidades </a>
+                    <div class="line"></div>
+                </div>
+
+                <div id="footer">
+                    <div id="sociais">
+
+                        <div class="circulo">
+                            <a class="link" href="https://www.instagram.com/ga_schia/#" target="_blank">
+                                <img class="redesocial" id="insta"
+                                    src="img/ícones/rede social/instagram fundo transparente.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="circulo">
+                            <a class="link" href="https://outlook.live.com/mail/0//" target="_blank">
+                                <img class="redesocial" id="email"
+                                    src="img/ícones/rede social/email fundo transparente.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="circulo">
+                            <a class="link" href="https://www.linkedin.com/in/gabriel-schiavon-361100254/"
+                                target="_blank">
+                                <img class="redesocial" id="linkedin"
+                                    src="img/ícones/rede social/Linkedin fundo transparente.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="circulo">
+                            <a class="link" href="https://github.com/gabriel-schiavon" target="_blank">
+                                <img class="redesocial" id="github"
+                                    src="img/ícones/rede social/github fundo transparente.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="testando">
+                <div id="imagem" data-aos="zoom-in" data-aos-duration="3000">
+                    <img id="image" src="img/Fotos Pessoal/Eu oficial.png" alt="">
+                </div>
+
+                <div class="buttons">
+                    <div class="button-container2">
+                        <div class="line2"></div>
+                        <a href="#projetos" class="button2">Veja meus Serviços </a>
+                    </div>
+
+                    <div class="button-container2" id="button-containerid">
+                        <div class="line2"></div>
+                        <a href="#contato" class="button2">Veja meu Contato</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Parte 2-->
+    <div id="partedehabilidades">
+
+
+        <div id="habilidades">
+
+            <h2 id="textohabilidade">Habilidades</h2>
+
+            <div id="skill">
+                <div class="borda">
+                    <img class="skills" id="html" src="img/ícones/linguagens/html dark.png" alt="">
+                    <p class="nome">HTML5</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="css" src="img/ícones/linguagens/css dark.png" alt="">
+                    <p class="nome">CSS3</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="js" src="img/ícones/linguagens/js dark.png" alt="">
+                    <p class="nome">Java Script</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="java" src="img/ícones/linguagens/java dark.png" alt="">
+                    <p class="nome">Java</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="php" src="img/ícones/linguagens/php dark.png" alt="">
+                    <p class="nome">PHP</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="ionic" src="img/ícones/linguagens/ionic dark.png" alt="">
+                    <p class="nome">Ionic</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="mysql" src="img/ícones/linguagens/mysql dark.png" alt="">
+                    <p class="nome">MySQL</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="laravel" src="img/ícones/linguagens/laravel dark.png" alt="">
+                    <p class="nome">Laravel</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="studio" src="img/ícones/linguagens/android studio dark.png" alt="">
+                    <p class="nome">Android Studio</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="photoshop" src="img/ícones/linguagens/photoshop dark.png" alt="">
+                    <p class="nome">Photoshop</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="corel" src="img/ícones/linguagens/corel dark.png" alt="">
+                    <p class="nome">Corel Drawn</p>
+                </div>
+
+                <div class="borda">
+                    <img class="skills" id="figma" src="img/ícones/linguagens/figma dark.png" alt="">
+                    <p class="nome">Figma</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Parte 3-->
+
+    <h3 id="textoprojeto">Projetos acadêmicos</h3>
+
+    <div id="projetos">
+
+        <div class="container">
+            <div class="image-box">
+                <img src="img/imagens semestre/primeirosemestre.png" alt="abrir modal" class="modal-trigger-image"
+                    onclick="openModal('modal1')" />
+                <div class="caption-box">
+                    <div class="caption-title">1º Semestre</div>
+                    <div class="caption-subtitle">MirrorFashion</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal1" onclick="closeModal(event, 'modal1')">
+            <div class="modal" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+                <img class="imgdentrodomodal" src="img/imagens semestre/primeirosemestre.png">
+                <div class="modal-texto">
+                    <h2>MirrorFashion</h2>
+                    <p> Este projeto desafiador foi desenvolvido no 1º semestre do curso, durante a disciplina de
+                        Padrões de Projeto de Sítios Internet I, cursada no segundo semestre de 2022, sob a orientação
+                        do professor Me. Adriano Bezerra. Representa meu primeiro contato profundo com desenvolvimento
+                        web responsivo.</p>
+
+                    <h2>Objetivo</h2>
+
+                    <p>O objetivo principal do projeto foi criar um site responsivo para uma loja fictícia de roupas e
+                        acessórios, utilizando apenas HTML5 e CSS3, sem o uso de frameworks ou recursos avançados. O
+                        foco foi aplicar os conceitos básicos de estruturação e estilização para desenvolver um layout
+                        funcional e adaptável.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="image-box">
+                <img src="img/imagens semestre/segundosemestre.png" alt="abrir modal" class="modal-trigger-image"
+                    onclick="openModal('modal2')" />
+                <div class="caption-box">
+                    <div class="caption-title">2º Semestre</div>
+                    <div class="caption-subtitle">Projeto Banco</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal2" onclick="closeModal(event, 'modal2')">
+            <div class="modal" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+                <img class="imgdentrodomodal" src="img/imagens semestre/segundosemestre.png">
+                <div class="modal-texto">
+                    <h2>Projeto Banco </h2>
+                    <p> Este projeto foi desenvolvido durante a disciplina de Design Digital, sob orientação do
+                        professor
+                        Maciel, com foco na criação de identidade visual para marcas fictícias. O desafio consistia em
+                        idealizar e projetar uma marca de banco, desde a concepção do nome até o desenvolvimento de sua
+                        logomarca e aplicação em materiais gráficos.</p>
+
+                    <h2>Objetivo</h2>
+
+                    <p>O principal objetivo do projeto foi exercitar a criação de logos impactantes e funcionais,
+                        utilizando
+                        conceitos de tipografia, composição visual e psicologia das cores. A proposta da logo do Vault
+                        Bank
+                        buscou transmitir estabilidade, crescimento e confiança, atributos essenciais para o setor
+                        financeiro.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="image-box">
+                <img src="img/imagens semestre/terceirosemestre.png" alt="abrir modal" class="modal-trigger-image"
+                    onclick="openModal('modal3')" />
+                <div class="caption-box">
+                    <div class="caption-title">3º Semestre</div>
+                    <div class="caption-subtitle">Calculadora</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal3" onclick="closeModal(event, 'modal3')">
+            <div class="modal" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+                <img class="imgdentrodomodal" src="img/imagens semestre/terceirosemestre.png">
+                <div class="modal-texto">
+                    <h2>Calculadora </h2>
+                    <p> Este projeto foi desenvolvido durante a disciplina de Desenvolvimento para Dispositivos Móveis
+                        I, sob orientação do professor Ricardo Honorato, com o objetivo de aplicar a linguagem
+                        JavaScript na construção de uma calculadora científica funcional.</p>
+
+                    <h2>Objetivo</h2>
+
+                    <p>A calculadora foi implementada utilizando HTML, CSS e JavaScript, com o apoio da biblioteca
+                        nativa Math do JavaScript, que possibilitou a execução de operações matemáticas avançadas como
+                        seno, cosseno, logaritmo, raiz quadrada, potência e outras funções científicas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image-box">
+                <img src="img/imagens semestre/quartosemestre.png" alt="abrir modal" class="modal-trigger-image"
+                    onclick="openModal('modal4')" />
+                <div class="caption-box">
+                    <div class="caption-title">4º Semestre</div>
+                    <div class="caption-subtitle">Banco de Dados</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal4" onclick="closeModal(event, 'modal4')">
+            <div class="modal" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+                <img class="imgdentrodomodal" src="img/imagens semestre/quartosemestre.png">
+                <div class="modal-texto">
+                    <h2>Banco de Dados </h2>
+                    <p>Este projeto foi desenvolvido durante a disciplina de Banco de Dados II, sob orientação do
+                        professor Alciano, com o objetivo de modelar e implementar um sistema relacional para uma
+                        livraria. A proposta envolveu a criação de um banco de dados completo, capaz de gerenciar
+                        usuários, livros, autores, reservas e empréstimos.</p>
+
+                    <h2>Objetivo</h2>
+
+                    <p>A modelagem foi feita com base nos princípios do Modelo Entidade-Relacionamento, resultando na
+                        criação de tabelas normalizadas com chaves primárias e estrangeiras bem definidas.
+
+                        Entre as principais entidades do sistema, estão:
+
+                        Usuário: cadastro de clientes que podem reservar e pegar livros emprestados.
+
+                        Livro: informações detalhadas dos títulos disponíveis.
+
+                        Autor: vínculo de autores com suas obras.
+
+                        Reserva e Empréstimo: controle de datas e status de disponibilidade dos livros.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="image-box">
+                <img src="img/imagens semestre/quintosemestre.png" alt="abrir modal" class="modal-trigger-image"
+                    onclick="openModal('modal5')" />
+                <div class="caption-box">
+                    <div class="caption-title">5º Semestre</div>
+                    <div class="caption-subtitle">Aplicativo Mobile</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal5" onclick="closeModal(event, 'modal5')">
+            <div class="modal" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+                <img class="imgdentrodomodal" src="img/imagens semestre/quintosemestre.png">
+                <div class="modal-texto">
+                    <h2>Aplicativo Mobile</h2>
+                    <p>Este projeto foi para desenvolver um aplicativo móvel multiplataforma para
+                        supermercados,orientado pelo professor
+                        Everaldo, o projeto permite aos usuários navegar por produtos, adicionar itens ao carrinho,
+                        realizar compras online e acompanhar pedidos, oferecendo uma experiência prática, rápida e
+                        intuitiva. O app visa facilitar as compras do dia a dia, aumentando a conveniência e
+                        acessibilidade para os clientes, além de ajudar o supermercado a ampliar seu alcance e melhorar
+                        o atendimento.</p>
+
+                    <h2>Objetivo</h2>
+
+                    <p>O projeto consiste na criação de um aplicativo utilizando o framework Ionic, que permite o
+                        desenvolvimento híbrido para Android e iOS com uma única base de código. O app incluirá
+                        funcionalidades como:
+
+                        Exibição de categorias e produtos do supermercado com imagens, descrições e preços.
+
+                        Busca e filtros para facilitar a localização de produtos.
+
+                        Sistema de carrinho de compras para adicionar, remover e alterar quantidades.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="image-box">
+                <img src="img/imagens semestre/sextosemestre.png" alt="abrir modal" class="modal-trigger-image"
+                    onclick="openModal('modal6')" />
+                <div class="caption-box">
+                    <div class="caption-title">6º Semestre</div>
+                    <div class="caption-subtitle">Aplicativo Vacina</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal6" onclick="closeModal(event, 'modal6')">
+            <div class="modal" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+                <img class="imgdentrodomodal" src="img/imagens semestre/sextosemestre.png">
+                <div class="modal-texto">
+
+                    <h2>Aplicativo Vacina</h2>
+                    <p>O projeto consiste na criação de um aplicativo usando o framework Ionic, que permite o
+                        desenvolvimento híbrido para Android e iOS a partir de uma única base de código. O aplicativo
+                        integra uma API e um banco de dados para gerenciar dados dos usuários, histórico de vacinas e
+                        agendamentos, garantindo uma experiência fluida, segura e sincronizada.
+
+                        O desenvolvimento foi orientado pelos professores Rafael, Regiane e Everaldo, que ministraram as
+                        disciplinas relacionadas ao projeto.</p>
+
+                    <h2>Objetivo</h2>
+
+                    <p>Desenvolver um aplicativo móvel multiplataforma que facilite o controle e o agendamento de
+                        vacinas
+                        para os usuários, promovendo a saúde preventiva por meio de lembretes, informações sobre vacinas
+                        e
+                        organização do histórico vacinal. O app tem como foco incentivar a vacinação correta e o
+                        acompanhamento contínuo, ajudando usuários a manterem suas vacinas atualizadas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carrossel Glide -->
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <!-- Slide 1 -->
+                <li class="glide__slide">
+                    <div class="container">
+                        <div class="image-box">
+                            <img src="img/imagens semestre/primeirosemestre.png" alt="abrir modal"
+                                class="modal-trigger-image" onclick="openModal('modal7')" />
+                            <div class="caption-box">
+                                <div class="caption-title">1º Semestre</div>
+                                <div class="caption-subtitle">Mirror Fashion</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Slide 2 -->
+                <li class="glide__slide">
+                    <div class="container">
+                        <div class="image-box">
+                            <img src="img/imagens semestre/segundosemestre.png" alt="abrir modal"
+                                class="modal-trigger-image" onclick="openModal('modal8')" />
+                            <div class="caption-box">
+                                <div class="caption-title">2º Semestre</div>
+                                <div class="caption-subtitle">Projeto Banco</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Slide 3 -->
+                <li class="glide__slide">
+                    <div class="container">
+                        <div class="image-box">
+                            <img src="img/imagens semestre/terceirosemestre.png" alt="abrir modal"
+                                class="modal-trigger-image" onclick="openModal('modal9')" />
+                            <div class="caption-box">
+                                <div class="caption-title">3º Semestre</div>
+                                <div class="caption-subtitle">Calculadora</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Slide 4 -->
+                <li class="glide__slide">
+                    <div class="container">
+                        <div class="image-box">
+                            <img src="img/imagens semestre/quartosemestre.png" alt="abrir modal"
+                                class="modal-trigger-image" onclick="openModal('modal10')" />
+                            <div class="caption-box">
+                                <div class="caption-title">4º Semestre</div>
+                                <div class="caption-subtitle">Banco de Dados</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Slide 5 -->
+                <li class="glide__slide">
+                    <div class="container">
+                        <div class="image-box">
+                            <img src="img/imagens semestre/quintosemestre.png" alt="abrir modal"
+                                class="modal-trigger-image" onclick="openModal('modal11')" />
+                            <div class="caption-box">
+                                <div class="caption-title">5º Semestre</div>
+                                <div class="caption-subtitle">Aplicativo Mobile</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Slide 6 -->
+                <li class="glide__slide">
+                    <div class="container">
+                        <div class="image-box">
+                            <img src="img/imagens semestre/sextosemestre.png" alt="abrir modal"
+                                class="modal-trigger-image" onclick="openModal('modal12')" />
+                            <div class="caption-box">
+                                <div class="caption-title">6º Semestre</div>
+                                <div class="caption-subtitle">Aplicaitvo Vacina</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Botões de Navegação -->
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" id="left" data-glide-dir="<">«</button>
+            <button class="glide__arrow glide__arrow--right" id="rigth" data-glide-dir=">">»</button>
+        </div>
+    </div>
+
+    <!-- Modal Slide 1 -->
+    <div class="modal-overlay" id="modal7" onclick="closeModal(event, 'modal7')">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+            <img class="imgdentrodomodal" src="img/imagens semestre/primeirosemestre.png" />
+            <div class="modal-texto">
+
+                <h2>Aplicativo Vacina</h2>
+                <p>O projeto consiste na criação de um aplicativo usando o framework Ionic, que permite o
+                    desenvolvimento híbrido para Android e iOS a partir de uma única base de código. O aplicativo
+                    integra uma API e um banco de dados para gerenciar dados dos usuários, histórico de vacinas e
+                    agendamentos, garantindo uma experiência fluida, segura e sincronizada.
+
+                    O desenvolvimento foi orientado pelos professores Rafael, Regiane e Everaldo, que ministraram as
+                    disciplinas relacionadas ao projeto.</p>
+
+                <h2>Objetivo</h2>
+
+                <p>Desenvolver um aplicativo móvel multiplataforma que facilite o controle e o agendamento de
+                    vacinas
+                    para os usuários, promovendo a saúde preventiva por meio de lembretes, informações sobre vacinas
+                    e
+                    organização do histórico vacinal. O app tem como foco incentivar a vacinação correta e o
+                    acompanhamento contínuo, ajudando usuários a manterem suas vacinas atualizadas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Slide 2 -->
+    <div class="modal-overlay" id="modal8" onclick="closeModal(event, 'modal8')">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+            <img class="imgdentrodomodal" src="img/imagens semestre/segundosemestre.png" />
+            <div class="modal-texto">
+                <h2>Projeto Banco </h2>
+                <p> Este projeto foi desenvolvido durante a disciplina de Design Digital, sob orientação do
+                    professor
+                    Maciel, com foco na criação de identidade visual para marcas fictícias. O desafio consistia em
+                    idealizar e projetar uma marca de banco, desde a concepção do nome até o desenvolvimento de sua
+                    logomarca e aplicação em materiais gráficos.</p>
+
+                <h2>Objetivo</h2>
+
+                <p>O principal objetivo do projeto foi exercitar a criação de logos impactantes e funcionais,
+                    utilizando
+                    conceitos de tipografia, composição visual e psicologia das cores. A proposta da logo do Vault
+                    Bank
+                    buscou transmitir estabilidade, crescimento e confiança, atributos essenciais para o setor
+                    financeiro.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Slide 3 -->
+    <div class="modal-overlay" id="modal9" onclick="closeModal(event, 'modal9')">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+            <img class="imgdentrodomodal" src="img/imagens semestre/terceirosemestre.png" />
+            <div class="modal-texto">
+                <h2>Calculadora </h2>
+                <p> Este projeto foi desenvolvido durante a disciplina de Desenvolvimento para Dispositivos Móveis
+                    I, sob orientação do professor Ricardo Honorato, com o objetivo de aplicar a linguagem
+                    JavaScript na construção de uma calculadora científica funcional.</p>
+
+                <h2>Objetivo</h2>
+
+                <p>A calculadora foi implementada utilizando HTML, CSS e JavaScript, com o apoio da biblioteca
+                    nativa Math do JavaScript, que possibilitou a execução de operações matemáticas avançadas como
+                    seno, cosseno, logaritmo, raiz quadrada, potência e outras funções científicas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Slide 4 -->
+    <div class="modal-overlay" id="modal10" onclick="closeModal(event, 'modal10')">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+            <img class="imgdentrodomodal" src="img/imagens semestre/quartosemestre.png" />
+            <div class="modal-texto">
+                <h2>Banco de Dados </h2>
+                <p>Este projeto foi desenvolvido durante a disciplina de Banco de Dados II, sob orientação do
+                    professor Alciano, com o objetivo de modelar e implementar um sistema relacional para uma
+                    livraria. A proposta envolveu a criação de um banco de dados completo, capaz de gerenciar
+                    usuários, livros, autores, reservas e empréstimos.</p>
+
+                <h2>Objetivo</h2>
+
+                <p>A modelagem foi feita com base nos princípios do Modelo Entidade-Relacionamento, resultando na
+                    criação de tabelas normalizadas com chaves primárias e estrangeiras bem definidas.
+
+                    Entre as principais entidades do sistema, estão:
+
+                    Usuário: cadastro de clientes que podem reservar e pegar livros emprestados.
+
+                    Livro: informações detalhadas dos títulos disponíveis.
+
+                    Autor: vínculo de autores com suas obras.
+
+                    Reserva e Empréstimo: controle de datas e status de disponibilidade dos livros.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Slide 5 -->
+    <div class="modal-overlay" id="modal11" onclick="closeModal(event, 'modal11')">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+            <img class="imgdentrodomodal" src="img/imagens semestre/quintosemestre.png" />
+            <div class="modal-texto">
+                <h2>Aplicativo Mobile</h2>
+                <p>Este projeto foi para desenvolver um aplicativo móvel multiplataforma para supermercados,orientado
+                    pelo professor
+                    Everaldo, o projeto permite aos usuários navegar por produtos, adicionar itens ao carrinho,
+                    realizar compras online e acompanhar pedidos, oferecendo uma experiência prática, rápida e
+                    intuitiva. O app visa facilitar as compras do dia a dia, aumentando a conveniência e
+                    acessibilidade para os clientes, além de ajudar o supermercado a ampliar seu alcance e melhorar
+                    o atendimento.</p>
+
+                <h2>Objetivo</h2>
+
+                <p>O projeto consiste na criação de um aplicativo utilizando o framework Ionic, que permite o
+                    desenvolvimento híbrido para Android e iOS com uma única base de código. O app incluirá
+                    funcionalidades como:
+
+                    Exibição de categorias e produtos do supermercado com imagens, descrições e preços.
+
+                    Busca e filtros para facilitar a localização de produtos.
+
+                    Sistema de carrinho de compras para adicionar, remover e alterar quantidades.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Slide 6 -->
+    <div class="modal-overlay" id="modal12" onclick="closeModal(event, 'modal12')">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeCurrentModal(this)">&times;</button>
+            <img class="imgdentrodomodal" src="img/imagens semestre/sextosemestre.png" />
+            <div class="modal-texto">
+
+                <h2>Aplicativo Vacina</h2>
+                <p>O projeto consiste na criação de um aplicativo usando o framework Ionic, que permite o
+                    desenvolvimento híbrido para Android e iOS a partir de uma única base de código. O aplicativo
+                    integra uma API e um banco de dados para gerenciar dados dos usuários, histórico de vacinas e
+                    agendamentos, garantindo uma experiência fluida, segura e sincronizada.
+
+                    O desenvolvimento foi orientado pelos professores Rafael, Regiane e Everaldo, que ministraram as
+                    disciplinas relacionadas ao projeto.</p>
+
+                <h2>Objetivo</h2>
+
+                <p>Desenvolver um aplicativo móvel multiplataforma que facilite o controle e o agendamento de
+                    vacinas
+                    para os usuários, promovendo a saúde preventiva por meio de lembretes, informações sobre vacinas
+                    e
+                    organização do histórico vacinal. O app tem como foco incentivar a vacinação correta e o
+                    acompanhamento contínuo, ajudando usuários a manterem suas vacinas atualizadas.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        // modal
+
+        // 1️⃣ Pegamos todas as imagens e todos os modais
+        function openModal(id) {
+            const overlay = document.getElementById(id);
+            if (overlay) {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeCurrentModal(btn) {
+            const overlay = btn.closest('.modal-overlay');
+            if (overlay) {
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+        }
+
+        // Animação suave ao carregar (opcional)
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.container')?.classList.add('fade-in');
+        });
+
+
+    </script>
+
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            new Glide('.glide', {
+                animationDuration: 800,
+                perView: 1
+            }).mount();
+        });
+
+    </script>
+
+
+
+
+
+    <br>
+
+
+    <div id="contato">
+        <h6 id="contatotexto">Contato</h6>
+    </div>
+
+    <footer class="fatec-footer">
+        <div class="footer-container">
+
+            <!-- Logotipo à esquerda -->
+            <div class="footer-logo">
+                <img id="logofatec" src="logo-fateclins-white.svg" alt="Logotipo Fatec" />
+                <p id="copyright" class="copyright">&copy; 2025 Gabriel Schiavon</p>
+            </div>
+
+            <!-- Redes sociais à direita -->
+            <div id="sociais2">
+
+                <div class="circulo">
+                    <a class="link" href="https://www.instagram.com/ga_schia/#" target="_blank">
+                        <img class="redesocial" id="insta2"
+                            src="img/ícones/rede social/instagram fundo transparente.png" alt="">
+                    </a>
+                </div>
+
+                <div class="circulo">
+                    <a class="link" href="https://outlook.live.com/mail/0//" target="_blank">
+                        <img class="redesocial" id="email2" src="img/ícones/rede social/email fundo transparente.png"
+                            alt="">
+                    </a>
+                </div>
+
+                <div class="circulo">
+                    <a class="link" href="https://www.linkedin.com/in/gabriel-schiavon-361100254/" target="_blank">
+                        <img class="redesocial" id="linkedin2"
+                            src="img/ícones/rede social/Linkedin fundo transparente.png" alt="">
+                    </a>
+                </div>
+
+                <div class="circulo">
+                    <a class="link" href="https://github.com/gabriel-schiavon" target="_blank">
+                        <img class="redesocial" id="github2" src="img/ícones/rede social/github fundo transparente.png"
+                            alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <hr id="linhafooter" />
+        <p id="copyright2" class="copyright">&copy; 2025 Gabriel Schiavon</p>
+
+    </footer>
+
+
+
+</body>
+
+</html>
